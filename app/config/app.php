@@ -121,9 +121,13 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',				// bootstrap generator
+		'Barryvdh\Debugbar\ServiceProvider',					// laravel debbuger
 
 	),
+
+	
+	
 
 	/*
 	|--------------------------------------------------------------------------
@@ -152,6 +156,7 @@ return array(
 	'aliases' => array(
 
 		'App'               => 'Illuminate\Support\Facades\App',
+		'Debugbar' 			=> 'Barryvdh\Debugbar\Facade',						// debugger facade
 		'Artisan'           => 'Illuminate\Support\Facades\Artisan',
 		'Auth'              => 'Illuminate\Support\Facades\Auth',
 		'Blade'             => 'Illuminate\Support\Facades\Blade',

@@ -17,6 +17,9 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+
+
+		log(asasd);
 		return View::make('hello');
 	}
 
