@@ -15,3 +15,9 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::resource('developer', 'DevelopersController');
+
+Route::resource('developers', 'DevelopersController');
+
+Route::resource('subdivisions', 'SubdivisionsController');
